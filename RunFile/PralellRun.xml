@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="1" parallel="tests">
+    <test name="FirefoxTest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="Railway.TC01_LoginValidAccount"/>
+        </classes>
+    </test>
+    <test name="ChromeTest">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="Railway.TC02_LoginWithBlankUserName"/>
+        </classes>
+    </test>
+    <test name="ChromeTest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="Railway.TC03_LoginWithInvalidPassword"/>
+        </classes>
+    </test>
+    <test name="ChromeTest">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="Railway.TC04_RedirectLoginPageAfterLogin"/>
+        </classes>
+    </test>
+    <test name="ChromeTest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="Railway.TC06_RedirectHomePageAfterLogin"/>
+        </classes>
+    </test>
+    <test name="ChromeTest">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="Railway.TC07_CreateNewAccount"/>
+        </classes>
+    </test>
+    <test name="ChromeTest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="Railway.TC09_NewPassAndConfirmPassDifferent"/>
+        </classes>
+    </test>
+    <test name="ChromeTest">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="Railway.TC10_CreateAccountWithAlreayInUserEmail"/>
+        </classes>
+    </test>
+    <test name="ChromeTest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="Railway.TC11_RegisterWithPasswordAndPidEmpty"/>
+        </classes>
+    </test>
+    <test name="ChromeTest">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="Railway.TC14_BookTickets"/>
+        </classes>
+    </test>
+    <test name="ChromeTest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="Railway.TC15_CheckPriceTickets"/>
+        </classes>
+    </test>
+    <test name="ChromeTest">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="Railway.TC16_CancelTickets"/>
+        </classes>
+    </test>
+</suite>
